@@ -1,6 +1,6 @@
 let myLibrary = [];
 
-function Book(author, title, pages, read) {
+const book = function Book(author, title, pages, read) {
     this.author = author;
     this.title = title;
     this.pages = pages;
@@ -8,5 +8,5 @@ function Book(author, title, pages, read) {
 }
 
 function addBookToLibrary() {
-
+    myLibrary.append(book);
 }

@@ -1,7 +1,22 @@
 const table = document.querySelector('table')
 const button = document.querySelector('button')
 
-let myLibrary = [];
+let myLibrary = [{
+    author: "Ion Creanga",
+    title: "Punguta cu doi bani",
+    pages: 8,
+    read: yes
+},{
+    author: "Alexandr Soljenitin",
+    title: "Arhipelagul Gulag",
+    pages: 1500,
+    read: yes
+},{
+    author: "Feodor Dostoevsky",
+    title: "Fratii Karamazov",
+    pages: 976,
+    read: no
+}];
 
 const book = function Book(author, title, pages, read) {
     this.author = author;
@@ -19,7 +34,7 @@ function loopThrough() {
        let newBook = document.createElement('div');
        let text = `<div class="table" style="background-color:blue; ">
        <div class="author">
-             <h4>Author</h4>
+             <h4>${this.myLibrary[0]}</h4>
          </div>
              <div class="book">
              <h4>Book</h4>

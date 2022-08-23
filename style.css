@@ -7,17 +7,16 @@ body {
 }
 
 .table {
+    top: 30%;
     display: grid;
     grid-template-columns: 200px;
-    grid-template-rows: 100px 100px 100px 100px;
+    grid-template-rows: 60px 60px 60px 60px;
     justify-self: center;
+    position: absolute;
 }
 
 .table > div {
     background-color: blanchedalmond;
     border: 1px solid black;
     text-align: center;
-}
-
-.table > .author {
 }

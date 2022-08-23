@@ -13,13 +13,12 @@ body {
 
 .book-container {
     top: 30%;
-    right: 30%;
+    right: 35%;
 }
 .table, .book-container {
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: 200px;
     grid-template-rows: 60px 60px 60px 60px;
-    justify-self: center;
     position: absolute;
 }
 
@@ -29,7 +28,16 @@ body {
     text-align: center;
 }
 
+.book-container > div > h4 > input {
+    border-radius: 5px;
+    width: 160px;
+}
 
+.book-container > input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 button {
     margin-top: 5px;

@@ -33,7 +33,7 @@ function addBookToLibrary() {
 }
 
 function loopThrough() {
-    bookContainer.innerHTML = `<div class="book-container" id="book-container" style="top: 30%; right: 30%;">
+    bookContainer.innerHTML = `<div class="book-container" id="book-container">
     <div class="author">
           <h4><input type="text" id="author" name="author"></h4>
       </div>

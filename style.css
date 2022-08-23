@@ -8,14 +8,22 @@ body {
 
 .table {
     top: 30%;
+    right: 60%;
+}
+
+.book-container {
+    top: 30%;
+    right: 30%;
+}
+.table, .book-container {
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 300px;
     grid-template-rows: 60px 60px 60px 60px;
     justify-self: center;
     position: absolute;
 }
 
-.table > div {
+.table > div, .book-container > div {
     background-color: blanchedalmond;
     border: 1px solid black;
     text-align: center;

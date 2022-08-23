@@ -1,5 +1,5 @@
 const table = document.querySelector('table')
-
+const button = document.querySelector('button')
 
 let myLibrary = [];
 
@@ -14,10 +14,10 @@ function addBookToLibrary() {
     myLibrary.append(book);
 }
 
-function loopThrough {
+function loopThrough() {
     for (books in myLibrary) {
        let newBook = document.createElement('div');
-       let text = `<div class="table">
+       let text = `<div class="table" style="background-color:blue; ">
        <div class="author">
              <h4>Author</h4>
          </div>
@@ -34,3 +34,7 @@ function loopThrough {
         newBook.appendChild(text);
     }
 }
+
+button.addEventListener('click', () => {
+    loopThrough();
+})

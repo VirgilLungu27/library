@@ -10,3 +10,9 @@ const book = function Book(author, title, pages, read) {
 function addBookToLibrary() {
     myLibrary.append(book);
 }
+
+function loopThrough {
+    for (book in myLibrary) {
+        
+    }
+}

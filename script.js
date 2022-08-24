@@ -39,12 +39,11 @@ function addBook() {
     const div_add = document.createElement("div");
     div_add.id = "div_add"
     div_add.innerHTML = `${input.value}`
-    div_add.style = "padding: 15px;"
     const remove_button = document.createElement("button");
     remove_button.id = "remove";
     remove_button.value = "remove";
     remove_button.innerHTML = "remove";
-    remove_button.style = "height: 30px";
+    remove_button.style = "height: 30px;";
     remove_button.addEventListener("click", function (e) {
         bookShelf.removeChild(div_add);
         bookShelf.removeChild(remove_button);
@@ -58,6 +57,9 @@ function addBook() {
     bookShelf.appendChild(div_add);
     bookShelf.appendChild(remove_button);
     bookShelf.appendChild(read_button);
+    read_button.addEventListener("click", function (r) {
+        div_add.style = "background-color: orange; display: flex; justify-content: center; align-items: center;";
+    })
     input.value = ""
 }
 

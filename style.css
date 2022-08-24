@@ -30,6 +30,12 @@ body {
     font-family: inherit;
 }
 
+.book-shelf > div > .remove {
+    margin-left: 2px;
+    width: 50px;
+    font-size: 12px;
+}
+
 .table, .book-container {
     display: grid;
     grid-template-columns: 200px;

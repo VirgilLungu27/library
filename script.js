@@ -36,13 +36,39 @@ function addBookToLibrary() {
 
 
 function addBook() {
-    const div = document.createElement("div");
-    div.innerHTML = `${input.value} <button>remove</button>`
-    bookShelf.appendChild(div);
+    const div_add = document.createElement("div");
+    div_add.id = "div_add"
+    div_add.innerHTML = `${input.value}`
+    div_add.style = "padding: 15px;"
+    const remove_button = document.createElement("button");
+    remove_button.id = "remove";
+    remove_button.value = "remove";
+    remove_button.innerHTML = "remove";
+    remove_button.style = "height: 30px";
+    remove_button.addEventListener("click", function (e) {
+        bookShelf.removeChild(div_add);
+        bookShelf.removeChild(remove_button);
+        bookShelf.removeChild(read_button);
+    })
+    const read_button = document.createElement("button");
+    read_button.id = "remove";
+    read_button.value = "remove";
+    read_button.innerHTML = "read";
+    read_button.style = "height: 30px;";
+    bookShelf.appendChild(div_add);
+    bookShelf.appendChild(remove_button);
+    bookShelf.appendChild(read_button);
     input.value = ""
+}
+
+function removeBook() {
+    const removal = document.getElementById('div_add');
+    removal.innerHTML = ``
 }
 
 
 button.addEventListener('click', () => {
     addBook();
 })
+
+

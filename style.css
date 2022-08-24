@@ -15,6 +15,17 @@ body {
     top: 30%;
     right: 35%;
 }
+
+.book-shelf { 
+    top: -100%;
+    left: 300%;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    position: absolute;
+}
+
+
 .table, .book-container {
     display: grid;
     grid-template-columns: 200px;
@@ -22,7 +33,7 @@ body {
     position: absolute;
 }
 
-.table > div, .book-container > div {
+.table > div, .book-container > div, .book-shelf > div {
     background-color: blanchedalmond;
     border: 1px solid black;
     text-align: center;

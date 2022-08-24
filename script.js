@@ -1,6 +1,8 @@
 const table = document.querySelector('table')
 const button = document.getElementById('button')
 const bookContainer = document.getElementById('book-container')
+const bookShelf = document.getElementById(('book-shelf'))
+const input = document.getElementById('author')
 
 let myLibrary = [{
     author: "Ion Creanga",
@@ -51,6 +53,15 @@ function loopThrough() {
       </div>`
     }
 
+function addBook() {
+    const div = document.createElement("div");
+    div.innerHTML = `${input.value}`
+    input.value = ""
+    bookShelf.appendChild(div);
+}
+
+
 button.addEventListener('click', () => {
     loopThrough();
+    addBook();
 })

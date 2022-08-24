@@ -17,14 +17,18 @@ body {
 }
 
 .book-shelf { 
-    top: -100%;
-    left: 300%;
+    top: 2%;
+    left: 85%;
     display: grid;
-    grid-template-columns: 200px;
+    grid-template-columns: 250px;
     grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
     position: absolute;
 }
 
+.book-shelf > div {
+    padding-top: 10px;
+    font-family: inherit;
+}
 
 .table, .book-container {
     display: grid;

@@ -37,7 +37,7 @@ function addBookToLibrary() {
 
 function addBook() {
     const div = document.createElement("div");
-    div.innerHTML = `${input.value}`
+    div.innerHTML = `${input.value} <button>remove</button>`
     bookShelf.appendChild(div);
     input.value = ""
 }

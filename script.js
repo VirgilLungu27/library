@@ -39,6 +39,7 @@ function addBook() {
     const div = document.createElement("div");
     div.innerHTML = `${input.value}`
     bookShelf.appendChild(div);
+    input.value = ""
 }
 
 

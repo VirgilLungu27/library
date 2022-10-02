@@ -26,21 +26,20 @@
     </div>
 
     <div class="book-container" id="book-container">
+        <form>
         <div class="author">
-              <h4><input type="text" id="author" name="author"></h4>
+              <h4><input type="text" id="author" name="author" required></h4>
           </div>
               <div class="book">
-              <h4><input type="text" id="name" name="name"></h4>
+              <h4><input type="text" id="name" name="name" required></h4>
           </div>
           <div class="pages">
-          <h4><input type="text" id="pages" name="pages"></h4>
+          <h4><input type="text" id="pages" name="pages" required></h4>
           </div>
           <div class="read">
-          <input type="radio" id="author" name="author" value="yes" checked>
-              <label for="yes">Yes</label>
-          <input type="radio" id="author" name="author" value="no" checked>
-              <label for="no">No</label>        
           </div>
+          <button id="submit">Submit</button>
+        </form>
     </div>
     <div class="book-shelf" id="book-shelf">
     </div>

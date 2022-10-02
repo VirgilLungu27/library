@@ -2,7 +2,8 @@ const table = document.querySelector('table')
 const button = document.getElementById('button')
 const bookContainer = document.getElementById('book-container')
 const bookShelf = document.getElementById(('book-shelf'))
-const input = document.getElementById('author')
+const input = document.querySelectorAll('input')
+
 
 let myLibrary = [{
     author: "Ion Creanga",
@@ -73,4 +74,11 @@ button.addEventListener('click', () => {
     addBook();
 })
 
-
+input.addEventListener('click', (e) => {
+    if (input.validity.valueMissing) {
+        input.setCustomValidity('Please fill this input.');
+        input.reportValidity();
+    } else {
+        input.setCustomValidity("");
+    } 
+})
